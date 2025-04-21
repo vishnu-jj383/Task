@@ -1,0 +1,284 @@
+/* Main background gradient */
+.login-page .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #F2F2F2; /* Light gray background */
+    padding: 20px;
+  }
+  
+  /* Card container */
+  .login-page .login-card {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 70%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .login-page .row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login-page .col-6 {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .login-page .image-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-page .login-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  .login-page .login-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .login-page .form-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #5F4B8B; /* Dark Purple accent border */
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Card for form */
+  .login-page .card {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .login-page .card h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #5F4B8B; /* Dark Purple */
+    text-align: center;
+  }
+  
+  /* Alert Box */
+  .login-page .alert {
+    margin-bottom: 20px;
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Input field styles */
+  .login-page .login-input {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Focus effect for input */
+  .login-page .login-input:focus {
+    border-color: #5F4B8B; /* Dark Purple focus border */
+    box-shadow: 0 0 8px rgba(95, 75, 139, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  /* Button Styles */
+  .login-page .login-btn {
+    background-color: #FF8C42; /* Soft Orange */
+    border-color: #FF8C42;
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 140, 66, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .login-page .login-btn:hover {
+    background-color: #E77F34; /* Slightly darker orange */
+    border-color: #E77F34;
+    transform: translateY(-3px);
+  }
+  
+  /* Button focus */
+  .login-page .login-btn:focus {
+    box-shadow: 0 0 5px rgba(255, 140, 66, 0.3);
+  }
+  
+  /* Input and button focus styles */
+  .login-page .form-container input:focus,
+  .login-page .form-container .ant-btn:focus {
+    outline: none;
+  }
+  
+  /* Form Labels */
+  .login-page .ant-form-item-label {
+    font-size: 16px;
+    color: #333333; /* Charcoal for labels */
+    font-weight: 500;
+  }
+  
+  .login-page .ant-form-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .login-page .login-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+  
+    .login-page .login-card {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+  
+    .login-page .col-6 {
+        width: 100%;
+        height: auto;
+    }
+  
+    .login-page .image-container {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+  
+    .login-page .form-container {
+        padding: 30px;
+        margin-top: 20px;
+        border-left: none;
+        border-top: 6px solid #5F4B8B; /* Dark Purple accent for mobile */
+    }
+  
+    .login-page .card h3 {
+        font-size: 28px;
+    }
+  
+    .login-page .login-input {
+        font-size: 14px;
+        padding: 10px;
+    }
+  
+    .login-page .login-btn {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-page .login-container {
+        padding: 15px;
+    }
+  
+    .login-page .login-card {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+  
+    .login-page .col-6 {
+        width: 100%;
+        height: auto;
+    }
+  
+    .login-page .image-container {
+        height: 200px; /* Reduce image size on mobile */
+    }
+  
+    .login-page .form-container {
+        padding: 20px;
+        margin-top: 20px;
+        border-left: none;
+        border-top: 6px solid #5F4B8B; /* Dark Purple accent for mobile */
+    }
+  
+    .login-page .card h3 {
+        font-size: 24px;
+    }
+  
+    .login-page .login-input {
+        font-size: 14px;
+        padding: 10px;
+    }
+  
+    .login-page .login-btn {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-page .login-container {
+        padding: 10px;
+    }
+  
+    .login-page .login-card {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+  
+    .login-page .col-6 {
+        width: 100%;
+        height: auto;
+    }
+  
+    .login-page .image-container {
+        height: 150px; /* Even smaller image size */
+    }
+  
+    .login-page .form-container {
+        padding: 15px;
+        margin-top: 15px;
+        border-left: none;
+        border-top: 6px solid #5F4B8B; /* Dark Purple accent for mobile */
+    }
+  
+    .login-page .card h3 {
+        font-size: 20px;
+    }
+  
+    .login-page .login-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+  
+    .login-page .login-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+  }
+  

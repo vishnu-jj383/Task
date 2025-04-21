@@ -1,0 +1,197 @@
+/* Container for filters */
+.filters-container {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  /* Common styling for filter items */
+  .filter-item {
+    flex: 1;
+    min-width: 200px; /* Minimum width to prevent shrinking too much */
+  }
+  
+  /* Common styling for both filters */
+  .task-filter {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Specific styling for Input */
+  .task-filter.ant-input {
+    padding: 0 15px;
+  }
+  
+  /* Specific styling for Select */
+  .task-filter .ant-select-selector {
+    height: 40px !important;
+    padding: 0 15px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-filter:hover,
+  .task-filter:focus,
+  .task-filter .ant-select-selector:hover,
+  .task-filter .ant-select-selector:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+  
+  .task-filter::placeholder {
+    color: #999;
+  }
+  
+  .task-filter .ant-select-arrow {
+    color: #666;
+  }
+  
+  /* Container for pagination */
+  .pagination-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Style for pagination */
+  .task-pagination .ant-pagination-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fff;
+    min-width: 32px;
+    height: 32px;
+    line-height: 30px;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .task-pagination .ant-pagination-item:hover,
+  .task-pagination .ant-pagination-item-active {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+    color: #007bff;
+  }
+  
+  .task-pagination .ant-pagination-prev,
+  .task-pagination .ant-pagination-next {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fff;
+    min-width: 32px;
+    height: 32px;
+    line-height: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .task-pagination .ant-pagination-prev:hover,
+  .task-pagination .ant-pagination-next:hover {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+  }
+  
+  .task-pagination .ant-pagination-item-link {
+    color: #007bff;
+  }
+  
+  .task-pagination .ant-pagination-options-quick-jumper {
+    margin-left: 16px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .task-pagination .ant-pagination-options-quick-jumper input {
+    width: 50px;
+    height: 32px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 0 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .task-pagination .ant-pagination-options-quick-jumper input:hover,
+  .task-pagination .ant-pagination-options-quick-jumper input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+  
+  /* Style for total tasks text */
+  .task-pagination .ant-pagination-total-text {
+    color: #666;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .filters-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .filter-item {
+      width: 100%;
+      min-width: 0; /* Allow full width on small screens */
+    }
+  
+    .task-filter {
+      font-size: 13px; /* Slightly smaller text on mobile */
+    }
+  
+    .task-pagination .ant-pagination-item,
+    .task-pagination .ant-pagination-prev,
+    .task-pagination .ant-pagination-next {
+      min-width: 28px;
+      height: 28px;
+      line-height: 26px;
+      margin: 0 2px;
+    }
+  
+    .task-pagination .ant-pagination-options-quick-jumper input {
+      width: 40px;
+      height: 28px;
+      font-size: 13px;
+    }
+  
+    .task-pagination .ant-pagination-total-text {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-header h3 {
+      font-size: 20px; /* Smaller header on very small screens */
+    }
+  
+    .card-body {
+      padding: 10px; /* Reduce padding on small screens */
+    }
+  
+    .ant-list-item {
+      flex-direction: column; /* Stack list item content */
+      align-items: flex-start;
+    }
+  
+    .ant-list-item-action {
+      margin-top: 10px; /* Space actions below content */
+      width: 100%;
+      text-align: center;
+    }
+  
+    .ant-list-item-action li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }

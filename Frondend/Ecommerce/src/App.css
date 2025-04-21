@@ -1,0 +1,72 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.nav-item {
+  cursor: pointer;
+}
+.hideSelect {
+  appearance: none;
+}
+.pd-select {
+  padding: 7px 6px;
+}
+.pd-edit-btn {
+  position: relative;
+  top: 0px;
+  right: 40px;
+  background: wheat;
+  padding: 2px 7px;
+}
+.cad-btn {
+  background: #86e986;
+  border: none;
+  padding: 5px 6px;
+  border-radius: 4px;
+}
+.sketch-grid-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_body {
+    margin: 24px 0px;
+}
+.antd_btn {
+    background-color: rgb(82, 196, 26);
+    margin: 16px 0;
+}
+.filter-labels {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 4px 0px !important;
+    border-bottom-width: 1px;
+    font-weight: 400;
+}
+
+.dr-cad-btn {
+  background-color: #e9e9e9 !important;
+  color: black !important;
+  padding: 19px 2px;
+    width: 44%;
+}
+
+.dr-cad-btn:hover, 
+.dr-cad-btn:focus, 
+.dr-cad-btn:active {
+  background-color: #e9e9e9 !important; 
+  color: white !important; 
+  border-color: #e9e9e9 !important; 
+}
+.album-de-right-section {
+  margin: 16px 0;
+}
+th {
+  white-space: nowrap;;
+}
+.table-responsive {
+  overflow-x: auto;
+}
